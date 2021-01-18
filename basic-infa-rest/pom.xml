@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>basic-infa-login</artifactId>
+    <artifactId>basic-infa-rest</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -18,8 +18,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.basic.infa</groupId>
-            <artifactId>basic-infa-rest</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
+
 </project>

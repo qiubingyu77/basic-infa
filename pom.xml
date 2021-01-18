@@ -19,37 +19,34 @@
 
     <modules>
         <module>basic-infa-login</module>
-        <module>basic-infa-mysql</module>
+        <module>basic-infa-rest</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency>
-    </dependencies>
-
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>org.basic.infa</groupId>
-                <artifactId>basic-infa-mysql</artifactId>
+                <artifactId>basic-infa-rest</artifactId>
+                <version>${parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.basic.infa</groupId>
+                <artifactId>basic-infa-login</artifactId>
+                <version>${parent.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
-
 </project>
