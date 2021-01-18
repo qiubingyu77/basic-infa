@@ -20,6 +20,7 @@
     <modules>
         <module>basic-infa-login</module>
         <module>basic-infa-rest</module>
+        <module>basic-infa-mysql</module>
     </modules>
 
     <dependencies>
@@ -27,6 +28,14 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
     </dependencies>
 
@@ -45,6 +54,11 @@
             <dependency>
                 <groupId>org.basic.infa</groupId>
                 <artifactId>basic-infa-login</artifactId>
+                <version>${parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.basic.infa</groupId>
+                <artifactId>basic-infa-mysql</artifactId>
                 <version>${parent.version}</version>
             </dependency>
         </dependencies>
