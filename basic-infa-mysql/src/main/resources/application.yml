@@ -1,0 +1,19 @@
+mybatis-plus:
+ # global-config:
+  #  db-config:
+     # table-prefix: buss_db
+  #mapper-locations: org\basic\infa\mysql\domain
+  #typeAliasesPackage: org.basic.infa.mysql.domain
+
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.220.129:3306/buss_db?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      auto-commit: false      # 关闭自动提交
+      maximum-pool-size: 10
+      minimum-idle: 2
+      pool-name: mysql-pool
+
