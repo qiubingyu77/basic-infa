@@ -1,9 +1,11 @@
 package org.basic.infa.login.service;
 
 import org.basic.infa.login.vo.User;
+import org.basic.infa.mysql.domain.TsUser;
+import org.basic.infa.rest.exception.InfaExeception;
 
 /**
- * @autor qiubingyu
+ * @author qiubingyu
  * @date 2021/1/19
  * @name ILoginService
  *
@@ -13,21 +15,22 @@ import org.basic.infa.login.vo.User;
  *
  *  3 生成jwt token, 用户和密码验证成功之后生成token
  *
- *
  **/
 public interface ILoginService {
     /**
      * 验证用户
      * 1 验证用户，用户是否存在
      * 2 验证密码 密码是否合法
-     * @param user
+     * @param user 用户信息
+     * @throws InfaExeception
      */
-    void validUser(final User user);
+    TsUser validUser(final User user) throws InfaExeception;
 
     /**
-     * 验证token
-     * @param token
+     * 生成token
+     * @param username 用户名
+     * @return token
      */
-    void validToken(String token);
+    String generateToken(final String username);
 
 }
