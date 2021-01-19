@@ -5,11 +5,10 @@ import lombok.Data;
 
 @Data
 public class TsUser {
-
   private long id;
-  private String userId;
-  private String userName;
-  private String userPasswd;
+  private String username;
+  private String password;
+  private String salt;
   private java.sql.Timestamp createTime;
 
 }

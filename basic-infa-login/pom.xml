@@ -21,5 +21,9 @@
             <groupId>org.basic.infa</groupId>
             <artifactId>basic-infa-rest</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.basic.infa</groupId>
+            <artifactId>basic-infa-mysql</artifactId>
+        </dependency>
     </dependencies>
 </project>

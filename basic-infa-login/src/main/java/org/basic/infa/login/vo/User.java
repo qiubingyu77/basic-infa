@@ -14,5 +14,6 @@ import javax.validation.constraints.NotBlank;
 public class User {
     @NotBlank(message = "用户名不为空")
     String username;
+    @NotBlank(message = "密码不为空")
     String password;
 }

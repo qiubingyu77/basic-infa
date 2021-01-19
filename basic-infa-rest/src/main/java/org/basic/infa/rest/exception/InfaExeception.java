@@ -8,12 +8,12 @@ import lombok.Data;
  * @date 2021/1/18
  **/
 @Data
-public class InfoExeception extends RuntimeException {
+public class InfaExeception extends RuntimeException {
 
     int code;
     String msg;
 
-    public InfoExeception(int code, String msg) {
+    public InfaExeception(int code, String msg) {
         super(msg);
         this.code = code;
         this.msg = msg;

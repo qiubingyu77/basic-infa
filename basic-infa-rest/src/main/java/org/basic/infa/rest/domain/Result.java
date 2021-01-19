@@ -1,14 +1,14 @@
 package org.basic.infa.rest.domain;
 
-import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 /**
  * @author qiubingyu
  * @date 2021/1/18
  * @name GlobalResult
  **/
+@Builder(toBuilder = true)
 @Data
 public class Result {
     int code;

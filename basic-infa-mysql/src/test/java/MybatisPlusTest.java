@@ -20,7 +20,6 @@ public class MybatisPlusTest extends BaseTest{
     public void test1(){
         UserMapper userMapper = applicationContext.getBean(UserMapper.class);
         TsUser tsUser = userMapper.selectById("2");
-        System.out.println(tsUser.getUserName());
         LockSupport.park();
     }
 
